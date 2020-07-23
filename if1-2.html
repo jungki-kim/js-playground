@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>대소문자 판별</h2>
+    <script>
+        var s1 = prompt("아무 영단어 입력");
+        var uTxt = s1.toUpperCase();
+        var lTxt = s1.toLowerCase();
+
+        if (s1 === uTxt) {
+            console.log(s1 + "은(는) 대문자입니다.")
+        } else if (s1 ===lTxt) {
+            console.log(s1 + "은(는) 소문자입니다.")
+        } else {
+            console.log(s1 + "은(는) 섞여있습니다.")
+        }
+    </script>
+</body>
+</html>
