@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>조건문을 이용한 구구단 구현</h2>
+    <input type="text" id="num">
+    <button onclick="display()">확인</button>
+    <script>
+        function display(){
+            var strN = document.getElementById("num").value;
+            var n = Number(strN);
+
+            if (n < 2 || n > 9) {
+                document.write("2 이상 9 이하로 입력해");
+            } else {
+                    document.write("<h3>" + n + "단</h3>");
+                for (var i = 1; i < 10; i++) {
+                    document.write(n + " * " + i + " = " + n*i + "<br>");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
